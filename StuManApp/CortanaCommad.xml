@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="zh-cn" Name="SearchStu_zh-cn">
+    <AppName> 学管 </AppName>
+    <Example> 查找xxx </Example>
+    <Command Name="Search">
+      <Example> 查找xxx </Example> 
+      <ListenFor> [查询][查找]{Sid}的信息 </ListenFor>
+      <Feedback> 正在查找... </Feedback>
+      <Navigate/>
+    </Command>
+    <PhraseTopic Label="Sid">
+      <Subject>Number</Subject>
+    </PhraseTopic>
+  </CommandSet>
+</VoiceCommands>
